@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>HTML + JS Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="w-50">
+                <br>
+                <br>
+                <br>
+                <table class="tablse">
+                    <thead class="thead-light">
+                      <tr>
+                          <th colspan="4" scope="col">
+                              <input class="form-control" id="txt_result" readonly>
+                          </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <button type="button" onclick="add(1);" class="btn btn-light btn-block">1</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="add(2);" class="btn btn-light btn-block">2</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="add(3);" class="btn btn-light btn-block">3</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operation(1);" class="btn btn-light btn-block">+</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <button type="button" onclick="add(4);" class="btn btn-light btn-block">4</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="add(5);" class="btn btn-light btn-block">5</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="add(6);" class="btn btn-light btn-block">6</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operation(2);" class="btn btn-light btn-block">-</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <button type="button" onclick="add(7);" class="btn btn-light btn-block">7</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="add(8);" class="btn btn-light btn-block">8</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="add(9);" class="btn btn-light btn-block">9</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operation(3);" class="btn btn-light btn-block">*</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <button type="button" onclick="add(0);" class="btn btn-light btn-block">0</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="deleteDigit();" class="btn btn-light btn-block">DEL</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="equals();" class="btn btn-light btn-block">=</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operation(4);" class="btn btn-light btn-block">/</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js.js"></script>
+    </body>
+</html>
